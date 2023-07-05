@@ -123,13 +123,13 @@ html += /* html */`
 
             <div id="glyph" class="
                 block               md:block            lg:block
-                relative            md:absolute         lg:absolute         
+                absolute            md:absolute         lg:absolute         
                 w-10                md:w-4              lg:w-4/5       
                 h-10                md:h-4              lg:h-4/5        
                 order-1                                 lg:order-2
-                                    md:top-auto         lg:top-auto            
+                top-2               md:top-auto         lg:top-auto            
                                                         lg:left-4   xl:left-0
-                                                        lg:right-4  xl:right-0
+                right-2                                 lg:right-4  xl:right-0
                                     md:bottom-4         lg:bottom-4   
                                     md:mx-auto
                 z-20">
