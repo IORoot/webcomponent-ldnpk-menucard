@@ -24,6 +24,7 @@ html += /* html */`
             /* Variables  */
             --backgroundColour: var(--color-stone-50);
             --foregroundColour: var(--color-stone-950);
+            --hoverColour:      var(--color-emerald-500);
             --glyphColour:      var(--color-cyan-500);
             --glyphSize:        calc(100% - 2rem);
         }
@@ -34,6 +35,10 @@ html += /* html */`
 
         #glyph {
             fill: var(--glyphColour);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
         }
 
     /*  ╭──────────────────────────────────────────────────────────╮
@@ -42,16 +47,18 @@ html += /* html */`
 
         #menucard:hover {
             background: var(--glyphColour);
-            color: var(--backgroundColour);
+            color: var(--hoverColour);
         }
 
         #menucard:hover h3,
         #menucard:hover h4 {
-            color: var(--backgroundColour);
+            color: var(--hoverColour);
         }
 
         #menucard:hover #glyph {
-            fill: var(--backgroundColour);
+            fill: var(--foregroundColour);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
         }
 
 
