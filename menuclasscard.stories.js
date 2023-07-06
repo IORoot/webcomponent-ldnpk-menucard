@@ -1,4 +1,4 @@
-import './menucard.js';
+import './menuclasscard.js';
 import '../button/button.js';
 
 // ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -8,8 +8,8 @@ import '../button/button.js';
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
 export default {
-	title: 'LondonParkour/Cards/MenuCard',
-	component: '<ldnpk-menucard></ldnpk-menucard>',
+	title: 'LondonParkour/Cards/MenuClassCard',
+	component: '<ldnpk-menuclasscard></ldnpk-menuclasscard>',
 	tags: ['autodocs'],
 
 	// Docs Page Description
@@ -17,7 +17,7 @@ export default {
 		docs: {
 			description: {
 				component:
-					'The LondonParkour MenuCard Component.',
+					'The LondonParkour MenuclassCard Component.',
 			},
 		},
 	},
@@ -54,7 +54,7 @@ export const Default = ({ }) => {
 	</style>
 
 	<div class="w-1/5 mr-auto">
-		<ldnpk-menucard 
+		<ldnpk-menuclasscard 
 			title="Saturday Youth Class" 
 			subtitle="10.30am @Canada Water"
 			>

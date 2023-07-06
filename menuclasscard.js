@@ -29,7 +29,7 @@ html += /* html */`
             --glyphSize:        calc(100% - 2rem);
         }
         
-        #menucard {
+        #menuclasscard {
             background: var(--backgroundColour);
         }
 
@@ -45,17 +45,17 @@ html += /* html */`
         │                       HOVER STATES                       │
         ╰──────────────────────────────────────────────────────────╯ */
 
-        #menucard:hover {
+        #menuclasscard:hover {
             background: var(--glyphColour);
             color: var(--hoverColour);
         }
 
-        #menucard:hover h3,
-        #menucard:hover h4 {
+        #menuclasscard:hover h3,
+        #menuclasscard:hover h4 {
             color: var(--hoverColour);
         }
 
-        #menucard:hover #glyph {
+        #menuclasscard:hover #glyph {
             fill: var(--foregroundColour);
             -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -75,7 +75,7 @@ html += /* html */`
 // │                       TEMPLATE                        │
 // ╰───────────────────────────────────────────────────────╯
 html += /* html */`
-    <a id="menucard" href="" rel="" title="" target="" class="
+    <a id="menuclasscard" href="" rel="" title="" target="" class="
         relative
         flex
         flex-row                    md:flex-col
@@ -167,7 +167,7 @@ template.innerHTML = html
 // ╭───────────────────────────────────────────────────────╮
 // │                  DEFINE WEBCOMPONENT                  │
 // ╰───────────────────────────────────────────────────────╯
-class MenuCard extends HTMLElement {
+class MenuClassCard extends HTMLElement {
 
     constructor() {
 
@@ -185,7 +185,7 @@ class MenuCard extends HTMLElement {
         observe(tw, theshadowRoot);
 
         // define element
-        const element = this.shadowRoot.querySelector("#menucard");
+        const element = this.shadowRoot.querySelector("#menuclasscard");
 
         // Set classes on navbar
         element.classList.add(...this.classAttribute);
@@ -236,4 +236,4 @@ class MenuCard extends HTMLElement {
 
 }
 
-customElements.define("ldnpk-menucard", MenuCard);
+customElements.define("ldnpk-menuclasscard", MenuClassCard);
